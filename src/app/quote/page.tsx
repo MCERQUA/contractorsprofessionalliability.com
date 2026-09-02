@@ -132,55 +132,93 @@ export default function QuotePage() {
                       </div>
 
                       {/* complete contractor field set — forms-required-fields.json */}
-                      <div>
-                        <label className={labelClass}>Street address</label>
-                        <input type="text" name="street_address" value={formData.street_address} onChange={(e) => setFormData({ ...formData, street_address: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Business address</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">Where your operation is based.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>City</label>
                         <input type="text" name="city" value={formData.city} onChange={(e) => setFormData({ ...formData, city: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>ZIP code</label>
                         <input type="text" name="zip" value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div>
+                        <label className={labelClass}>Street address</label>
+                        <input type="text" name="street_address" value={formData.street_address} onChange={(e) => setFormData({ ...formData, street_address: e.target.value })} className={inputClass} />
+                      </div>
+                      </div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Prior year</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">Your last completed 12 months. Best estimates are fine.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Prior year gross sales</label>
                         <input type="text" name="prior_year_gross_sales" value={formData.prior_year_gross_sales} onChange={(e) => setFormData({ ...formData, prior_year_gross_sales: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Prior year subcontractor expenses</label>
                         <input type="text" name="prior_year_subcontractor_expenses" value={formData.prior_year_subcontractor_expenses} onChange={(e) => setFormData({ ...formData, prior_year_subcontractor_expenses: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Prior year employee count</label>
                         <input type="number" name="prior_year_employee_count" value={formData.prior_year_employee_count} onChange={(e) => setFormData({ ...formData, prior_year_employee_count: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Prior year employee payroll</label>
                         <input type="text" name="prior_year_employee_payroll" value={formData.prior_year_employee_payroll} onChange={(e) => setFormData({ ...formData, prior_year_employee_payroll: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                      </div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Next twelve months — estimates</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">What you expect over the coming year.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Estimated gross sales (next 12 months)</label>
                         <input type="text" name="estimated_gross_sales" value={formData.estimated_gross_sales} onChange={(e) => setFormData({ ...formData, estimated_gross_sales: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Estimated subcontractor expenses (next 12 months)</label>
                         <input type="text" name="estimated_subcontractor_expenses" value={formData.estimated_subcontractor_expenses} onChange={(e) => setFormData({ ...formData, estimated_subcontractor_expenses: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Estimated employee count (year total)</label>
                         <input type="number" name="estimated_employee_count" value={formData.estimated_employee_count} onChange={(e) => setFormData({ ...formData, estimated_employee_count: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Estimated employee annual payroll</label>
                         <input type="text" name="estimated_employee_payroll" value={formData.estimated_employee_payroll} onChange={(e) => setFormData({ ...formData, estimated_employee_payroll: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div>
                         <label className={labelClass}>Estimated material costs</label>
                         <input type="text" name="estimated_material_costs" value={formData.estimated_material_costs} onChange={(e) => setFormData({ ...formData, estimated_material_costs: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        <div>
+                        <label className={labelClass}>Annual gross sales</label>
+                        <input type="text" name="annual_gross_sales" value={formData.annual_gross_sales} onChange={(e) => setFormData({ ...formData, annual_gross_sales: e.target.value })} className={inputClass} />
+                      </div>
+                      </div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Subcontractor insurance</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">This drives how your policy is rated — answer if you use subs.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Do your subcontractors have insurance?</label>
                         <select name="subcontractors_have_insurance" value={formData.subcontractors_have_insurance} onChange={(e) => setFormData({ ...formData, subcontractors_have_insurance: e.target.value })} className={inputClass}>
                           <option value="">Select...</option>
@@ -188,11 +226,12 @@ export default function QuotePage() {
                           <option value="No">No</option>
                         </select>
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>What percent of your subcontractors have insurance?</label>
                         <input type="number" name="percent_subcontractors_insured" value={formData.percent_subcontractors_insured} onChange={(e) => setFormData({ ...formData, percent_subcontractors_insured: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div>
                         <label className={labelClass}>Do you need coverage for uninsured subcontractors?</label>
                         <select name="coverage_for_uninsured_subcontractors" value={formData.coverage_for_uninsured_subcontractors} onChange={(e) => setFormData({ ...formData, coverage_for_uninsured_subcontractors: e.target.value })} className={inputClass}>
                           <option value="">Select...</option>
@@ -200,61 +239,84 @@ export default function QuotePage() {
                           <option value="No">No</option>
                         </select>
                       </div>
-                      <div>
-                        <label className={labelClass}>Annual gross sales</label>
-                        <input type="text" name="annual_gross_sales" value={formData.annual_gross_sales} onChange={(e) => setFormData({ ...formData, annual_gross_sales: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Your operation</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">How the work splits and what you build.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Year business started</label>
                         <input type="number" name="year_business_started" value={formData.year_business_started} onChange={(e) => setFormData({ ...formData, year_business_started: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
-                        <label className={labelClass}>Description of business</label>
-                        <textarea name="business_description" rows={3} value={formData.business_description} onChange={(e) => setFormData({ ...formData, business_description: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
-                        <label className={labelClass}>Class code 1 (+ % of operations)</label>
-                        <input type="text" name="class_code_1" value={formData.class_code_1} onChange={(e) => setFormData({ ...formData, class_code_1: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
-                        <label className={labelClass}>Class code 2 (+ % of operations)</label>
-                        <input type="text" name="class_code_2" value={formData.class_code_2} onChange={(e) => setFormData({ ...formData, class_code_2: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
-                        <label className={labelClass}>Class code 3 (+ % of operations)</label>
-                        <input type="text" name="class_code_3" value={formData.class_code_3} onChange={(e) => setFormData({ ...formData, class_code_3: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
-                        <label className={labelClass}>Class code 4 (+ % of operations)</label>
-                        <input type="text" name="class_code_4" value={formData.class_code_4} onChange={(e) => setFormData({ ...formData, class_code_4: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
-                        <label className={labelClass}>Class code 5 (+ % of operations)</label>
-                        <input type="text" name="class_code_5" value={formData.class_code_5} onChange={(e) => setFormData({ ...formData, class_code_5: e.target.value })} className={inputClass} />
-                      </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Residential vs commercial split</label>
                         <input type="text" name="residential_vs_commercial" value={formData.residential_vs_commercial} onChange={(e) => setFormData({ ...formData, residential_vs_commercial: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div>
                         <label className={labelClass}>New construction vs existing / remodel</label>
                         <input type="text" name="new_vs_existing_construction" value={formData.new_vs_existing_construction} onChange={(e) => setFormData({ ...formData, new_vs_existing_construction: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        <div>
+                        <label className={labelClass}>Description of business</label>
+                        <textarea name="business_description" rows={3} value={formData.business_description} onChange={(e) => setFormData({ ...formData, business_description: e.target.value })} className={inputClass} />
+                      </div>
+                        <div>
                         <label className={labelClass}>5 largest projects ever (description + dollar amount)</label>
                         <textarea name="largest_projects" rows={3} value={formData.largest_projects} onChange={(e) => setFormData({ ...formData, largest_projects: e.target.value })} placeholder="Description and dollar amount for each" className={inputClass} />
                       </div>
-                      <div>
+                      </div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Class codes</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">If you know them. Leave blank and we'll assign them.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
+                        <label className={labelClass}>Class code 1 (+ % of operations)</label>
+                        <input type="text" name="class_code_1" value={formData.class_code_1} onChange={(e) => setFormData({ ...formData, class_code_1: e.target.value })} className={inputClass} />
+                      </div>
+                          <div>
+                        <label className={labelClass}>Class code 2 (+ % of operations)</label>
+                        <input type="text" name="class_code_2" value={formData.class_code_2} onChange={(e) => setFormData({ ...formData, class_code_2: e.target.value })} className={inputClass} />
+                      </div>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
+                        <label className={labelClass}>Class code 3 (+ % of operations)</label>
+                        <input type="text" name="class_code_3" value={formData.class_code_3} onChange={(e) => setFormData({ ...formData, class_code_3: e.target.value })} className={inputClass} />
+                      </div>
+                          <div>
+                        <label className={labelClass}>Class code 4 (+ % of operations)</label>
+                        <input type="text" name="class_code_4" value={formData.class_code_4} onChange={(e) => setFormData({ ...formData, class_code_4: e.target.value })} className={inputClass} />
+                      </div>
+                        </div>
+                        <div>
+                        <label className={labelClass}>Class code 5 (+ % of operations)</label>
+                        <input type="text" name="class_code_5" value={formData.class_code_5} onChange={(e) => setFormData({ ...formData, class_code_5: e.target.value })} className={inputClass} />
+                      </div>
+                      </div>
+                      <div className="space-y-4 pt-5 border-t border-adobe">
+                        <div>
+                          <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Prior policy</h3>
+                          <p className="text-xs text-mocha/70 mt-0.5">Your expiring or most recent policy.</p>
+                        </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div>
                         <label className={labelClass}>Prior insurance carrier name</label>
                         <input type="text" name="prior_carrier_name" value={formData.prior_carrier_name} onChange={(e) => setFormData({ ...formData, prior_carrier_name: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                          <div>
                         <label className={labelClass}>Prior policy number</label>
                         <input type="text" name="prior_policy_number" value={formData.prior_policy_number} onChange={(e) => setFormData({ ...formData, prior_policy_number: e.target.value })} className={inputClass} />
                       </div>
-                      <div>
+                        </div>
+                        <div>
                         <label className={labelClass}>Prior policy expiration date</label>
                         <input type="date" name="prior_policy_expiration" value={formData.prior_policy_expiration} onChange={(e) => setFormData({ ...formData, prior_policy_expiration: e.target.value })} className={inputClass} />
+                      </div>
                       </div>
 
                       {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
