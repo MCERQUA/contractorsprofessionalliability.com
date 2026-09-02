@@ -137,6 +137,10 @@ export default function QuotePage() {
                           <h3 className="font-heading font-bold text-sm uppercase tracking-wider">Business address</h3>
                           <p className="text-xs text-mocha/70 mt-0.5">Where your operation is based.</p>
                         </div>
+                        <div>
+                        <label className={labelClass}>Street address</label>
+                        <input type="text" name="street_address" value={formData.street_address} onChange={(e) => setFormData({ ...formData, street_address: e.target.value })} className={inputClass} />
+                      </div>
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div>
                         <label className={labelClass}>City</label>
@@ -147,10 +151,6 @@ export default function QuotePage() {
                         <input type="text" name="zip" value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} className={inputClass} />
                       </div>
                         </div>
-                        <div>
-                        <label className={labelClass}>Street address</label>
-                        <input type="text" name="street_address" value={formData.street_address} onChange={(e) => setFormData({ ...formData, street_address: e.target.value })} className={inputClass} />
-                      </div>
                       </div>
                       <div className="space-y-4 pt-5 border-t border-adobe">
                         <div>
