@@ -131,7 +131,7 @@ export const COPY = {
     lead: "Tell us about your services and contract exposure. We'll shop A-rated specialty contractor markets and come back with real quotes in about 15 minutes — no obligation.",
     businessPlaceholder: "Apex Design-Build LLC",
     emailPlaceholder: "sarah@apexdesignbuild.com",
-    phonePlaceholder: "(480) 555-0100",
+    phonePlaceholder: "Best number to reach you",
     messagePlaceholder:
       "Services performed, annual revenue, contract types, professional liability history, coverage lines needed, current insurer, loss history, or anything else that helps us quote accurately…",
     errorMessage: "Something went wrong. Please call us at 844-967-5247 or try again.",
