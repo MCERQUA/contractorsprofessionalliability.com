@@ -10,17 +10,17 @@
 
 @layer base {
   :root {
-    --bg-cream: #F8F9FC;
-    --bg-sand: #EEF1F7;
+    --bg-cream: #FBF9F6;
+    --bg-sand: #F5F0EA;
     --bg-white: #FFFFFF;
-    --clay: #1B3A6B;
-    --clay-dark: #0D1F3C;
-    --sage: #2E5FA3;
+    --clay: #5A3017;
+    --clay-dark: #32190B;
+    --sage: #8F4E28;
     --gold: #C9A227;
-    --espresso: #0D1F3C;
-    --cocoa: #344A6B;
-    --mocha: #5A7190;
-    --adobe: #CBD5E4;
+    --espresso: #32190B;
+    --cocoa: #6E3C20;
+    --mocha: #856A53;
+    --adobe: #E1D2C5;
     --radius: 1rem;
   }
 
@@ -48,7 +48,7 @@
   }
 
   ::selection {
-    background: rgba(27, 58, 107, 0.16);
+    background: rgba(90, 48, 23, 0.16);
     color: var(--espresso);
   }
 }
@@ -98,7 +98,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #1B3A6B 0%, #2E5FA3 24%, #5A84CC 58%, #C9A227 100%);
+    background: linear-gradient(90deg, #5A3017 0%, #8F4E28 24%, #C56D39 58%, #C9A227 100%);
   }
   .pill { @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-heading font-semibold uppercase tracking-wider; }
   .pill-clay { @apply pill bg-clay/10 text-clay border border-clay/20; }
@@ -113,41 +113,41 @@
   .bg-sonoran {
     background-color: var(--bg-cream);
     background-image:
-      radial-gradient(circle at 15% 15%, rgba(27, 58, 107, 0.08) 0%, transparent 35%),
-      radial-gradient(circle at 85% 75%, rgba(46, 95, 163, 0.06) 0%, transparent 40%);
+      radial-gradient(circle at 15% 15%, rgba(90, 48, 23, 0.08) 0%, transparent 35%),
+      radial-gradient(circle at 85% 75%, rgba(143, 78, 40, 0.06) 0%, transparent 40%);
   }
   .bg-sonoran-sand {
     background-color: var(--bg-sand);
     background-image:
-      radial-gradient(circle at 70% 20%, rgba(27, 58, 107, 0.07) 0%, transparent 45%),
+      radial-gradient(circle at 70% 20%, rgba(90, 48, 23, 0.07) 0%, transparent 45%),
       radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.08) 0%, transparent 40%);
   }
   .bg-warm-radial {
     background:
-      radial-gradient(ellipse at top, rgba(27, 58, 107, 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at bottom right, rgba(46, 95, 163, 0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at top, rgba(90, 48, 23, 0.10) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(143, 78, 40, 0.07) 0%, transparent 50%),
       var(--bg-cream);
   }
   /* Blueprint band — professional navy and gold stripe */
   .horizon-band {
     background: linear-gradient(180deg,
-      #1B3A6B 0% 18%, #2E5FA3 18% 34%, #C9A227 34% 48%,
-      #2E5FA3 48% 62%, #1B3A6B 62% 78%, #5A84CC 78% 100%);
+      #5A3017 0% 18%, #8F4E28 18% 34%, #C9A227 34% 48%,
+      #8F4E28 48% 62%, #5A3017 62% 78%, #C56D39 78% 100%);
   }
   .grain {
     background-image:
-      repeating-linear-gradient(92deg, rgba(27,58,107,0.0) 0px, rgba(27,58,107,0.0) 10px, rgba(255,255,255,0.025) 10px, rgba(255,255,255,0.025) 11px),
+      repeating-linear-gradient(92deg, rgba(90,48,23,0.0) 0px, rgba(90,48,23,0.0) 10px, rgba(255,255,255,0.025) 10px, rgba(255,255,255,0.025) 11px),
       repeating-linear-gradient(88deg, rgba(0,0,0,0.0) 0px, rgba(0,0,0,0.0) 23px, rgba(0,0,0,0.03) 23px, rgba(0,0,0,0.03) 24px);
   }
   .dotted-warm {
-    background-image: radial-gradient(circle, rgba(27, 58, 107, 0.12) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(90, 48, 23, 0.12) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   .arch-divider { position: relative; height: 3rem; width: 100%; }
   .arch-divider::after {
     content: ""; position: absolute; inset: 0; margin: auto;
     width: 10rem; height: 1.4rem;
-    background: linear-gradient(90deg, #1B3A6B 0% 18%, #2E5FA3 18% 40%, #C9A227 40% 62%, #5A84CC 62% 82%, #1B3A6B 82% 100%);
+    background: linear-gradient(90deg, #5A3017 0% 18%, #8F4E28 18% 40%, #C9A227 40% 62%, #C56D39 62% 82%, #5A3017 82% 100%);
     border-radius: 0.5rem; opacity: 0.92;
   }
 
@@ -160,7 +160,7 @@
   .prose-warm li::before {
     content: ""; position: absolute; left: 0; top: 0.55em;
     width: 1.1rem; height: 0.5rem;
-    background: linear-gradient(90deg, #1B3A6B 0% 35%, #C9A227 35% 70%, #2E5FA3 70% 100%);
+    background: linear-gradient(90deg, #5A3017 0% 35%, #C9A227 35% 70%, #8F4E28 70% 100%);
     border-radius: 0.15rem 0.5rem 0.15rem 0.5rem; opacity: 0.9;
   }
   .prose-warm strong { @apply text-espresso font-semibold; }
