@@ -51,11 +51,6 @@ export const COPY = {
   process: {
     lead: "No two-week back-and-forth. A real conversation, real markets, and a program you can actually understand — built around your services and contract exposure.",
   },
-  testimonials: {
-    eyebrow: "From professional contractors",
-    h2Lead: "Contractors that found",
-    h2Highlight: "coverage that actually pays",
-  },
   finalCta: {
     h2Lead: "Protect Your Contracting Firm",
     h2Highlight: "with coverage built for professional liability.",

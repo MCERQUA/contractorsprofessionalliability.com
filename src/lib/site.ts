@@ -158,8 +158,4 @@ export const STATS = [
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
-export const TESTIMONIALS = [
-  { quote: "We are a design-build firm and could not find a carrier that understood where the design exposure ends and the construction exposure begins. These guys placed a coordinated E&O and GL program that actually works together. No more gap between policies.", name: "Marcus T.", role: "Principal, Design-Build Contractor", location: "Phoenix, AZ" },
-  { quote: "A client sued us claiming our project management services caused cost overruns. Our contractors E&O covered the defense and settlement — without it we would have been paying out of pocket. The policy was worth every dollar.", name: "Sandra L.", role: "Project Manager, Construction Firm", location: "Dallas, TX" },
-  { quote: "We do design-build commercial work and needed $10M in limits for a hospital project. They got us the umbrella stack and coordinated E&O within a week. Nobody else could move that fast with our exposure profile.", name: "David R.", role: "Owner, Commercial Design-Build", location: "Denver, CO" },
-] as const;
+export const TESTIMONIALS: { quote: string; name: string; role: string; location: string }[] = [];
